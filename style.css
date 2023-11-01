@@ -1,0 +1,825 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.7rem;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+#navbar {
+  background: #fff;
+  color: #c72727;
+  overflow: auto;
+}
+
+#navbar a {
+  color: #c72727;
+}
+
+#navbar .logo {
+  float: left;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #c72727;
+  color: #fff;
+}
+
+.btn {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.3rem;
+  display: inline-block;
+  border: none;
+  background: #c72727;
+  color: #fff;
+  margin-top: 10px;
+  padding: 0.5rem 1.5rem;
+}
+
+/* Showcase */
+#showcase {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#showcase:before {
+  content: "";
+  background: url("img/Navratri.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+}
+
+#showcase .showcase-content p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+#showcase .showcase-container {
+  line-height: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+#showcase-content > h1 {
+  line-height: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Home2*/
+#home2 {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 4rem;
+  background: #c72727;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.title {
+  text-align: center;
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+#main {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+#parent_div {
+  display: flex;
+  gap: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#parent_div > div > p {
+  margin-bottom: 30px;
+}
+#parent_div > div > h3 {
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: -15px;
+}
+
+#home3 {
+  display: flex;
+}
+
+.infoimg {
+  width: 50%;
+  height: 450px;
+  background: url(img/Navratri-celebrations-in-Gu.webp) no-repeat center
+    center/cover;
+}
+
+.info-content > h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+  margin-top: 60px;
+  font-size: 1.5rem;
+}
+
+.info-content > p {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 100;
+}
+
+.info-content {
+  background-color: #c72727;
+  font-family: "Roboto Condensed", sans-serif;
+  float: right;
+  width: 50%;
+  height: 350px;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+.btn2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.3rem;
+  display: inline-block;
+  border: none;
+  background: #fff;
+  color: #c72727;
+  margin-top: 40px;
+  padding: 0.5rem 1.5rem;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a:hover {
+  color: #c72727;
+}
+
+.footer .social > * {
+  margin-right: 10px;
+}
+
+.footer-schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-schedule .social > * {
+  margin-right: 10px;
+}
+
+.footer-schedule a:hover {
+  color: #c72727;
+}
+.social-schedule > a {
+  color: #fff;
+  padding-right: 10px;
+}
+
+/* About us Showcase */
+#showcase2 {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#showcase2:before {
+  content: "";
+  background: url("img/homeimg.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+#showcase2 .showcase-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 40vh;
+  margin: 0px 180px;
+}
+
+#showcase2 .showcase-content2 {
+  z-index: 1;
+}
+
+#showcase2 .showcase-content2 p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+#showcase2 .showcase-container2 {
+  line-height: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+#showcase-content2 > h1 {
+  line-height: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+.storyflex {
+  display: flex;
+  gap: 50px;
+  margin: 100px 200px;
+}
+
+.storyimg {
+  margin-top: 30px;
+  background: url(img/story2.jpg) no-repeat center center/cover;
+  width: 600px;
+  height: 450px;
+}
+
+.story-content {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 50%;
+  font-weight: 200;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.story-content > h2 {
+  color: #c72727;
+}
+
+#home4 {
+  display: flex;
+}
+
+.infoimg2 {
+  width: 50%;
+  height: 450px;
+  background: url(img/artisans.jpeg) no-repeat center center/cover;
+}
+
+.info-content2 > h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 1.5rem;
+}
+
+.info-content2 > p {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 100;
+}
+
+.info-content2 {
+  background-color: #c72727;
+  font-family: "Roboto Condensed", sans-serif;
+  float: right;
+  width: 50%;
+  height: 350px;
+  text-align: left;
+  padding: 50px 50px;
+  overflow: hidden;
+}
+
+.storyimg2 {
+  margin-top: 10px;
+  background: url(img/localartist.avif) no-repeat center center/cover;
+  width: 600px;
+  height: 350px;
+}
+
+.infoimg3 {
+  width: 50%;
+  height: 450px;
+  background: url(img/trust.webp) no-repeat center center/cover;
+}
+
+#ceremony-benner {
+  background-color: #333;
+  background: url(img/ceremony.webp) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#benner-texts {
+  color: #fff;
+  z-index: 1;
+  text-align: center;
+  font-size: 12rem;
+  margin-top: 80px;
+  line-height: 11rem;
+  opacity: 0.9;
+}
+
+#team {
+  margin-top: 80px;
+  background-color: #c72727;
+  color: #fff;
+}
+
+.flex-items {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+
+.flex-items > div > img {
+  height: 300px;
+  width: 400px;
+}
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+}
+
+.section-header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.flex-items > div > h4 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+#schedule-showcase {
+  display: flex;
+  gap: 20px;
+  margin: 100px;
+}
+.illustrator {
+  background: url(img/Sillustator2-removebg-preview.png) no-repeat center
+    center/cover;
+  width: 900px;
+  height: 350px;
+  justify-content: end;
+  margin-top: -50px;
+}
+
+.schedule-info {
+  margin: 50px;
+}
+
+.schedule-info > h1 {
+  font-size: 2.5rem;
+  color: #c72727;
+}
+
+.schedule-info > p {
+  margin-top: 25px;
+  font-size: 1.2rem;
+}
+
+#grid {
+  margin: 150px;
+  margin-top: -50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 6px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.c-odd {
+  background-color: #c72727;
+}
+
+.c-even {
+  background-color: #333;
+}
+
+.card > a {
+  align-items: center;
+  color: #fff;
+}
+
+.card > a > div {
+  padding: 70px;
+  text-align: center;
+}
+
+.card > div > h3 {
+  margin-top: -10px;
+}
+
+/* Contact Form */
+
+.l-heading {
+  font-size: 2.1rem;
+}
+
+.l-heading > span {
+  font-weight: 400;
+  color: #c72727;
+}
+
+#contact-form {
+  margin-top: 40px;
+}
+
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 99%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+.info-container {
+  display: flex;
+  margin-top: 40px;
+}
+
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+/* DAY 1*/
+#showcase-day {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#showcase-day:before {
+  content: "";
+  background: url("img/ceremony.webp") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#showcase-day .showcase-container-day {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 70vh;
+}
+
+#showcase-day .showcase-container-day {
+  line-height: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.showcase-container-day > div > h1 {
+  text-align: center;
+  margin-top: -200px;
+  font-size: 5rem;
+}
+
+#title {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#title > div > h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+#title > div > h1 > span {
+  color: #c72727;
+}
+
+#title > div > p {
+  font-size: 1.2rem;
+}
+
+.story-content > h2 > span {
+  color: #5f5f5f;
+}
+
+.grey {
+  background-color: #5f5f5f;
+  height: 250px;
+  width: 600px;
+  border-radius: 12px;
+}
+
+.artist {
+  margin-top: 10px;
+  background: url(img/peraon1.jpg) no-repeat center center/cover;
+  width: 600px;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.sponsors-logo {
+  display: flex;
+  gap: 10 px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 30px;
+}
+
+#sponsors > h1 {
+  margin-top: 90px;
+  text-align: center;
+  font-size: 2rem;
+  color: #c72727;
+}
+
+.sponsors-logo > div {
+  width: 300px;
+  height: 300px;
+}
+
+.index {
+  text-align: center;
+  margin-bottom: 70px;
+  padding-right: 40px;
+}
+
+.Orange {
+  background-color: rgb(230, 106, 18);
+  height: 250px;
+  width: 600px;
+  border-radius: 12px;
+}
+
+#title>div>p {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.artist2 {
+  margin-top: 10px;
+  background: url(img/person2.webp) no-repeat center center/cover;
+  width: 600px;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.artist3 {
+  margin-top: 10px;
+  background: url(img/Parthiv-Gohil.jpg) no-repeat center center/cover;
+  width: 600px;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.white {
+  background-color: rgb(239, 233, 228);
+  height: 250px;
+  width: 600px;
+  border-radius: 12px;
+}
+
+.artist4 {
+  margin-top: 10px;
+  background: url(img/gitarabari.jpg) no-repeat center center/cover;
+  width: 600px;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.red {
+  background-color:rgb(208, 45, 45);
+  height: 250px;
+  width: 600px;
+  border-radius: 12px;
+}
+
+.blue {
+  background-color:rgb(86, 86, 220);
+  height: 250px;
+  width: 600px;
+  border-radius: 12px;
+}
+
+.artist5 {
+  margin-top: 10px;
+  background: url(img/Falguni-Pathak-1.avif) no-repeat center center/cover;
+  width: 600px;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.yellow {
+  background-color: rgb(242, 242, 43);
+  height: 250px;
+  width: 600px;
+  border-radius: 12px;
+}
+
+.artist5 {
+  margin-top: 10px;
+  background: url(img/jigardan_gadhavi.jpg) no-repeat center center/cover;
+  width: 600px;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.green {
+  background-color: rgb(36, 203, 36);
+  height: 250px;
+  width: 600px;
+  border-radius: 12px;
+}
+
+.artist6 {
+  margin-top: 10px;
+  background: url(img/kirtidan_gadhavi.jpg) no-repeat center center/cover;
+  width: 600px;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.pink {
+  background-color: rgb(244, 168, 181);
+  height: 250px;
+  width: 600px;
+  border-radius: 12px;
+}
+
+.artist7 {
+  margin-top: 10px;
+  background: url(img/Aishwarya_Majmudar.jpg-org) no-repeat center center/cover;
+  width: 600px;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.purple {
+  background-color: purple;
+  height: 250px;
+  width: 600px;
+  border-radius: 12px;
+}
+
+.artist8 {
+  margin-top: 10px;
+  background: url(img/devang_patel.webp) no-repeat center center/cover;
+  width: 600px;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+
+.logo2 {
+  margin-top: -17px;
+ height: 40px;
+}
+
+
+
+
+
+
